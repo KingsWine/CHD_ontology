@@ -1,0 +1,544 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/finewine/ontologies/2024/3/heart_disease-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/finewine/ontologies/2024/3/heart_disease-ontology-3">
+    <Prefix name="" IRI="http://www.semanticweb.org/finewine/ontologies/2024/3/heart_disease-ontology-3/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="heart_disease-ontology-3" IRI="http://www.semanticweb.org/finewine/ontologies/2024/3/heart_disease-ontology-3#"/>
+    <Declaration>
+        <Class IRI="#Age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Angina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blood_Pressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blood_Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CHD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiac_MRI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiac_PET_Scan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chest_Xray"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cholesterol_level"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cold_Sweats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Controllable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coronary_CT_Angiography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coronary_CT_Scan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coronary_Calcium_Scan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diabetes_Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diagnostic_Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dizziness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electrocardiogram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family_History"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fatigue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Heart_Attack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Invasive_Coronary_Angiography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Light_headedness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lipoprotein_panel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nausea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neck_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obesity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Positive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Risk_Factors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shortness_Breath"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smoking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stomach_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress_Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptoms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uncontrollable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weakness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Associated_with1"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Associated_with2"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#experiences"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#undergoes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BMI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BPMeds"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TenYearCHD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cigsPerDay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#currentSmoker"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#diaBP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#diabetes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#education"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#glucose"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#heartRate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#male"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#prevalentHyp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#prevalentStroke"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sysBP"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totChol"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Age"/>
+        <Class IRI="#Uncontrollable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Angina"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blood_Pressure"/>
+        <Class IRI="#Controllable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blood_Test"/>
+        <Class IRI="#Diagnostic_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardiac_MRI"/>
+        <Class IRI="#Diagnostic_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardiac_PET_Scan"/>
+        <Class IRI="#Diagnostic_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chest_Xray"/>
+        <Class IRI="#Diagnostic_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cholesterol_level"/>
+        <Class IRI="#Controllable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cold_Sweats"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Controllable"/>
+        <Class IRI="#Risk_Factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coronary_CT_Angiography"/>
+        <Class IRI="#Coronary_CT_Scan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coronary_CT_Scan"/>
+        <Class IRI="#Diagnostic_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coronary_Calcium_Scan"/>
+        <Class IRI="#Coronary_CT_Scan"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diabetes_Test"/>
+        <Class IRI="#Blood_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diet"/>
+        <Class IRI="#Controllable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dizziness"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doctor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electrocardiogram"/>
+        <Class IRI="#Diagnostic_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family_History"/>
+        <Class IRI="#Uncontrollable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fatigue"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gender"/>
+        <Class IRI="#Uncontrollable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Heart_Attack"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Invasive_Coronary_Angiography"/>
+        <Class IRI="#Diagnostic_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Light_headedness"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lipoprotein_panel"/>
+        <Class IRI="#Blood_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nausea"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neck_pain"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negative"/>
+        <Class IRI="#CHD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Obesity"/>
+        <Class IRI="#Controllable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Positive"/>
+        <Class IRI="#CHD"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shortness_Breath"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smoking"/>
+        <Class IRI="#Controllable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stomach_pain"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress"/>
+        <Class IRI="#Controllable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stress_Test"/>
+        <Class IRI="#Diagnostic_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uncontrollable"/>
+        <Class IRI="#Risk_Factors"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weakness"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Associated_with1"/>
+        <Class IRI="#CHD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Associated_with2"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#experiences"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performs"/>
+        <Class IRI="#Doctor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#undergoes"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Associated_with1"/>
+        <Class IRI="#Symptoms"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Associated_with2"/>
+        <Class IRI="#Risk_Factors"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#experiences"/>
+        <Class IRI="#Symptoms"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#CHD"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performs"/>
+        <Class IRI="#Diagnostic_Test"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#undergoes"/>
+        <Class IRI="#Diagnostic_Test"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#BMI"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#BPMeds"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TenYearCHD"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cigsPerDay"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#currentSmoker"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#diaBP"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#diabetes"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#education"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#glucose"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#heartRate"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#male"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#prevalentHyp"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#prevalentStroke"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#sysBP"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#totChol"/>
+        <Class IRI="#Patient"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#BMI"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#BPMeds"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#TenYearCHD"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#age"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cigsPerDay"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#currentSmoker"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#diaBP"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#diabetes"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#education"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#glucose"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#heartRate"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#male"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#prevalentHyp"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#prevalentStroke"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#sysBP"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#totChol"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
